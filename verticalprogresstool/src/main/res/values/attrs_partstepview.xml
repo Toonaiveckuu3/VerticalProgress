@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PartStepView">
+        <!--是否被选中-->
+        <attr name="psv_checked" format="boolean" />
+        <!--选中时圆的颜色，默认继承自colorPrimary-->
+        <attr name="psv_activeColor" format="color"/>
+        <!--未选中时圆的颜色/连接线的颜色，默认Color.LTGRAY-->
+        <attr name="psv_inactiveColor" format="color"/>
+        <!--圆的大小占控件最小边长的比例，0~1f，默认0.5f-->
+        <attr name="psv_circleRatio" format="float"/>
+        <!--连接线的宽度，默认2dp-->
+        <attr name="psv_lineWidth" format="dimension"/>
+        <!--连接线分为上下两根，默认为both（两根都显示）-->
+        <attr name="psv_line">
+            <flag name="both" value="0"/>
+            <flag name="up" value="1"/>
+            <flag name="down" value="2"/>
+            <flag name="none" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>
