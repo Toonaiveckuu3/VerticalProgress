@@ -12,6 +12,7 @@ import android.widget.ListAdapter;
 public class VerticalProgressAdapter extends BaseAdapter {
     private Context mContext;
     private ListAdapter mAdapter;
+    /***/
     private IProgress mProgress;
 
     public VerticalProgressAdapter(Context context,ListAdapter adapter) {
