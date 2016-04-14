@@ -19,7 +19,7 @@ public class ProgressImp implements IProgress {
         this.mContext = context;
         mPartStep = new PartStepView(mContext);
     }
-
+  
     @Override
     public View addPartStep(View convertView) {
         LinearLayout linearLayout = new LinearLayout(mContext);
