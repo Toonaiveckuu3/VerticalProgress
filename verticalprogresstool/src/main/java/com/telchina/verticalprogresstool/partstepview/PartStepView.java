@@ -143,6 +143,7 @@ public class PartStepView extends View {
     public PartStepView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
+        
     }
 
     private void init(Context context, AttributeSet attrs) {
