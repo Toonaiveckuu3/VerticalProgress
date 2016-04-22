@@ -182,11 +182,11 @@ public class VerticalProgress extends View {
             mLineColor = mInactiveCircleColor;
             mLineWidth = (int) customType.getDimension(R.styleable.VerticalProgress_psv_lineWidth, mLineWidth);
             mRatioWithCircle = (int) customType.getDimension(R.styleable.VerticalProgress_psv_circleRatio, mRatioWithCircle);
-            mActiveTextColor =  customType.getColor(R.styleable.VerticalProgress_psv_activeTextColor,mActiveTextColor);
-            mInactiveTextColor = customType.getColor(R.styleable.VerticalProgress_psv_inactiveTextColor,mInactiveTextColor);
-            mActiveTextSize = (int) customType.getDimension(R.styleable.VerticalProgress_psv_activeTextSize,mActiveTextSize);
-            mInactiveTextSize = (int) customType.getDimension(R.styleable.VerticalProgress_psv_inactiveTextSize,mInactiveTextSize);
-            mBetweenCircleText = customType.getDimension(R.styleable.VerticalProgress_psc_betweenCircleText,mBetweenCircleText);
+            mActiveTextColor = customType.getColor(R.styleable.VerticalProgress_psv_activeTextColor, mActiveTextColor);
+            mInactiveTextColor = customType.getColor(R.styleable.VerticalProgress_psv_inactiveTextColor, mInactiveTextColor);
+            mActiveTextSize = (int) customType.getDimension(R.styleable.VerticalProgress_psv_activeTextSize, mActiveTextSize);
+            mInactiveTextSize = (int) customType.getDimension(R.styleable.VerticalProgress_psv_inactiveTextSize, mInactiveTextSize);
+            mBetweenCircleText = customType.getDimension(R.styleable.VerticalProgress_psc_betweenCircleText, mBetweenCircleText);
             customType.recycle();
         }
 
@@ -288,7 +288,7 @@ public class VerticalProgress extends View {
         //Y轴偏移量
         float offsetY = mRatioWithCircle * (mRatioWithRing + 1) + getPaddingTop() + mTextPaint.getTextSize();
         //Y轴增量
-        float incrementY = (canvas.getHeight()- getPaddingTop() - (mRatioWithCircle * (mRatioWithRing + 1) +
+        float incrementY = (canvas.getHeight() - getPaddingTop() - (mRatioWithCircle * (mRatioWithRing + 1) +
                 mTextPaint.getTextSize()) * 2) / (mCount - 1);
 
         //字符串偏移量
