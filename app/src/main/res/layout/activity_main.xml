@@ -2,6 +2,7 @@
 <RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:paddingBottom="@dimen/activity_vertical_margin"
@@ -10,8 +11,28 @@
 	android:paddingTop="@dimen/activity_vertical_margin"
 	tools:context="com.telchina.verticalprogress.MainActivity">
 
+	<com.telchina.verticalprogress.VerticalProgress
+		android:id="@+id/partstepview"
+		android:layout_width="match_parent"
+		android:layout_height="400dp"
+		android:paddingTop="40dp"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		app:psv_activeColor="@color/colorPrimaryDark"
+		app:psv_inactiveColor="@android:color/black"
+		app:psv_activeTextColor="@android:color/holo_red_dark"
+		app:psv_inactiveTextSize="10sp"
+		app:psc_betweenCircleText="20dp"
+		app:psv_circleRatio="10dp"
+		app:psv_lineWidth="1dp"/>
+
+
 	<TextView
-		android:layout_width="wrap_content"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="Hello World!"/>
+		android:text="这是一个对比数据"
+		android:background="@android:color/holo_red_dark"
+		android:layout_below="@+id/partstepview"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"/>
 </RelativeLayout>
